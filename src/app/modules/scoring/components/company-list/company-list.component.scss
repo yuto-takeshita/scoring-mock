@@ -1,0 +1,72 @@
+:host {
+    height: 100%;
+}
+
+.table-area {
+    height: 100%;
+    margin: 10px 16px 0px 16px;
+    background-color: transparent;
+    position: relative;
+    .table-content {
+        height: 100%;
+        .table-header {
+            height: 36px;
+            margin-bottom: 8px;
+            .title {
+                font-size: 18px;
+                line-height: 36px;
+                font-weight: bold;
+            }
+        }
+    }
+    p-table {
+        .ui-table {
+            box-shadow: 0px 0px 5px #cccccc;
+        }
+        &::ng-deep {
+            p-sorticon {
+                i {
+                    margin: 3px 0 0 0;
+                }
+            }
+            .ui-table-scrollable-body {
+                overflow: auto !important;
+            }
+            .ui-table-scrollable-header-box,
+            .ui-table-scrollable-footer-box {
+                margin-right: 0 !important;
+            }
+        }
+        th {
+            border: none;
+            height: 28px;
+            padding: 2px 6px 2px 0;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 24px;
+        }
+        th,
+        td {
+            vertical-align: top;
+            text-align: center;
+            width: 136px;
+        }
+        td {
+            height: 48px;
+            line-height: 40px;
+            border: none;
+            border-bottom: 1px solid #cccccc;
+            background-color: transparent;
+            color: #565e65;
+            padding: 4px 12px;
+            font-size: 16px;
+        }
+        tr {
+            cursor: pointer;
+            background-color: #ffffff;
+            &:hover {
+                background-color: #fdf9e8 !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+<!-- <ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="small" color="#fff" type="ball-spin-clockwise" [fullScreen]="true"></ngx-spinner> -->
+
+<div class="position-relative h-100">
+    <div class="login-form">
+        <section class="login-form__logo">
+            <logo></logo>
+        </section>
+
+        <section class="login-form__content login-form-group">
+            <user-id-form [form]="userId" (keyup.enter)="login()"></user-id-form>
+            <password-form [form]="password" (keyup.enter)="login()"></password-form>
+        </section>
+        <div>※モックアプリなので何を入力してもOK</div>
+        <primary-button class="login-form__button" (click)="login()">ログイン</primary-button>
+    </div>
+</div>

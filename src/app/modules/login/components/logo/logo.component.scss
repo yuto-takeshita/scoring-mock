@@ -1,0 +1,13 @@
+:host {
+    display: block;
+    .logo {
+        padding: 0 8px;
+        &::ng-deep {
+            svg {
+                width: 350px;
+                height: auto;
+            }
+        }
+        pointer-events: none;
+    }
+}

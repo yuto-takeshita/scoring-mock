@@ -1,0 +1,22 @@
+:host {
+    display: block;
+    .header {
+        height: 60px;
+        padding: 6px 3px;
+        background-color: #eeeeee !important;
+    }
+    .navbar {
+        height: 100%;
+        padding: 0;
+    }
+    .header__navbar__logo {
+        padding: 0 8px;
+        &::ng-deep {
+            svg {
+                width: 80px;
+                height: 48px;
+            }
+        }
+        pointer-events: none;
+    }
+}

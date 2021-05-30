@@ -1,0 +1,49 @@
+.content {
+    margin: 12px 0;
+    width: 915px;
+    min-height: 200px;
+    padding: 0;
+    overflow: hidden;
+    .title {
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        height: 21px;
+        margin-bottom: 12px;
+    }
+    .section {
+        .section-title {
+            font-size: 12px;
+            font-weight: bold;
+            text-align: left;
+            height: 18px;
+            margin-bottom: 8px;
+        }
+        .section-content {
+            border-radius: 4px;
+            padding: 8px;
+            font-size: 12px;
+            margin: 0 0 0 8px;
+            tr {
+                height: 36px;
+            }
+            td {
+                color: #4a4a4a;
+                background-color: #ffffff;
+                min-width: 62px;
+                padding-top: 12px;
+                vertical-align: top;
+            }
+        }
+    }
+}
+
+.footer {
+    secondary-button {
+         ::ng-deep {
+            button {
+                width: 80px;
+            }
+        }
+    }
+}

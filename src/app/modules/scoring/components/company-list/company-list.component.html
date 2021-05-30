@@ -1,0 +1,29 @@
+<div class="table-area">
+    <div class="table-content">
+        <div class="table-body">
+            <p-table #budgetary_table [columns]="columns" [value]="companies" [paginator]="false" [resizableColumns]="true" columnResizeMode="expand" [scrollable]="true" [scrollHeight]="'70vh'" dataKey="RECORD_KEY">
+                <ng-template pTemplate="header" let-columns>
+                    <tr class="row-header">
+                        <th *ngFor="let column of columns">
+                            {{column.header}}
+                        </th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-company let-columns="columns" let-i="rowIndex">
+                    <tr class="row-body" (click)="onClickCompanyRow(company.companyCode)">
+                        <td *ngFor="let column of columns">
+                            <span *ngIf="column.field === 'companyCode' || column.field === 'rank'">{{company[column.field]}}</span>
+                            <span *ngIf="column.field === 'stockMarket'">{{company[column.field] | asAltTextPipe:"-"}}</span>
+                            <span *ngIf="column.field === 'businessCategory'">{{company[column.field] | asAltTextPipe:"-"}}</span>
+                            <span *ngIf="column.field === 'establishmentDate'">{{company[column.field] |  date:"yyyy年M月d日"}}</span>
+                            <span *ngIf="column.field === 'score'">{{company[column.field]}} pt</span>
+                            <span *ngIf="column.field === 'companyName'">
+                                    {{company[column.field]}}
+                            </span>
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    </div>
+</div>

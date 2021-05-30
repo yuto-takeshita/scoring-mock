@@ -1,0 +1,20 @@
+<div class="company-performance-content">
+    <div class="company-performance-content-title">
+        業績推移
+    </div>
+    <div class="company-performance-content-charts">
+
+        <div class="boxChart__container" (mousemove)="addHighlight($event)" (touchmove)="addHighlight($event)" (touchstart)="addHighlight($event)">
+            <div>
+                <highcharts-chart *ngIf="salesChartOption !== null" id="container1" [Highcharts]="Highcharts" [constructorType]="chartConstructor" [options]="salesChartOption" [callbackFunction]="chartCallback" [(update)]="updateFlag" style="width: 100%; display: block;">
+                </highcharts-chart>
+                <highcharts-chart *ngIf="customerCountChartOption !== null" id="container2" [Highcharts]="Highcharts" [constructorType]="chartConstructor" [options]="customerCountChartOption" [callbackFunction]="chartCallback" [(update)]="updateFlag" style="width: 100%; display: block;">
+                </highcharts-chart>
+                <highcharts-chart *ngIf="storeCountChartOption !== null" id="container3" [Highcharts]="Highcharts" [constructorType]="chartConstructor" [options]="storeCountChartOption" [callbackFunction]="chartCallback" [(update)]="updateFlag" style="width: 100%; display: block;">
+                </highcharts-chart>
+            </div>
+        </div>
+
+
+    </div>
+</div>

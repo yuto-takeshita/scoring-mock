@@ -1,0 +1,15 @@
+@import '../../../../assets/scss/variables.scss';
+:host {
+    display: block;
+    button {
+        cursor: pointer;
+        background-color: $negative-btn-color-bg;
+        border-color: $negative-btn-color-bg;
+        color: $negative-btn-color-font;
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+            border: 0px $negative-btn-color-bg;
+        }
+    }
+}

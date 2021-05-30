@@ -1,0 +1,33 @@
+.login-form {
+    background-color: #eeeeee;
+    border-radius: 5px;
+    width: 522px;
+    height: 522px;
+    position: absolute;
+    top: calc(50% - (522px / 2));
+    left: calc(50% - (522px / 2));
+    text-align: center;
+}
+
+.login-form__logo {
+    margin-top: 112px;
+    margin-bottom: 80px;
+}
+
+.login-form__content {
+    margin-top: 42px;
+}
+
+.login-form__button {
+    margin-top: 32px;
+     ::ng-deep {
+        button {
+            width: 175px;
+            padding: 5px 10px;
+        }
+    }
+}
+
+.login-form__item_link {
+    margin-bottom: 6px;
+}

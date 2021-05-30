@@ -1,0 +1,80 @@
+.company-score-content {
+    margin: 10px 16px;
+    width: 1032px;
+    height: 324px;
+    .company-score-content-detail {
+        border: 1px solid #d6dfe5;
+        padding: 6px;
+        display: inline-flex;
+        width: 1032px;
+    }
+    .company-score-content-score-breakdown {
+        width: 480px;
+        margin: 48px 8px 8px 116px;
+    }
+    .company-score-content-score-breakdown-total-score {
+        display: inline-flex;
+        margin-bottom: 8px;
+        span {
+            &.column-name {
+                color: #4a4a4a;
+                font-size: 24px;
+                font-weight: 640;
+                margin-right: 28px;
+            }
+            color: #4a4a4a;
+            font-size: 24px;
+            font-weight: 320;
+            margin-left: 8px;
+        }
+        secondary-button {
+             ::ng-deep {
+                button {
+                    width: 80px;
+                    margin: 0 12px;
+                }
+            }
+        }
+    }
+    .company-score-content-score-breakdown-score-by-category {
+        margin-left: 32px;
+        flex-direction: column;
+        display: inline-flex;
+        .category-row {
+            line-height: 28px;
+            margin-bottom: 8px;
+            display: inline-flex;
+            .category-column {
+                width: 120px;
+                display: inline-flex;
+                padding-top: 2px;
+                img {
+                    height: 22px;
+                    margin-right: 8px;
+                }
+                span {
+                    color: #4a4a4a;
+                    font-size: 18px;
+                    font-weight: 460;
+                    margin-right: 28px;
+                    line-height: 28px;
+                }
+            }
+            span {
+                color: #4a4a4a;
+                font-size: 18px;
+                font-weight: 320;
+                margin-left: 8px;
+            }
+        }
+    }
+    .company-score-content-title {
+        color: #4a4a4a;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+    .company-score-content-chart {
+        margin-left: 64px;
+    }
+}

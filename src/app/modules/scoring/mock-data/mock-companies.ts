@@ -1,0 +1,38 @@
+export const MockCompanies = [
+  {
+    companyCode: 'comp00',
+    companyName: '株式会社DEMO0',
+    establishmentDate: new Date('2020-04-01'),
+    stockMarket: '東証一部',
+    businessCategory: '小売店',
+    score: 83.4,
+    rank: 'A',
+  },
+  {
+    companyCode: 'comp01',
+    companyName: '株式会社DEMO1',
+    establishmentDate: new Date('2019-01-01'),
+    stockMarket: null,
+    businessCategory: '焼き肉',
+    score: 72.9,
+    rank: 'B',
+  },
+  {
+    companyCode: 'comp02',
+    companyName: '株式会社DEMO2',
+    establishmentDate: new Date('1992-11-01'),
+    stockMarket: '東証二部',
+    businessCategory: 'イタリアン',
+    score: 69.7,
+    rank: 'C',
+  },
+  {
+    companyCode: 'comp03',
+    companyName: '株式会社DEMO3',
+    establishmentDate: new Date('2001-09-01'),
+    stockMarket: 'JASDAQ',
+    businessCategory: '居酒屋',
+    score: 43.3,
+    rank: 'E',
+  },
+];

@@ -1,0 +1,115 @@
+.content {
+    margin: 0;
+    width: 430px;
+    min-height: 200px;
+    .dialog-title {
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+        position: relative;
+        max-width: 100%;
+        margin: 0 0 3px;
+        padding: 0;
+        text-transform: none;
+    }
+    .dialog-text {
+        font-size: 14px;
+        font-weight: normal;
+        text-align: center;
+    }
+    .dialog-icon {
+        width: 60px;
+        height: 60px;
+        border-width: 4px;
+        border-style: solid;
+        border-radius: 50%;
+        padding: 0;
+        position: relative;
+        box-sizing: content-box;
+        margin: 0 auto 32px;
+        &:first-child {
+            margin-top: 8px;
+        }
+        &.info {
+            border-color: #0099d5;
+            &:before {
+                box-sizing: border-box;
+                content: "";
+                position: absolute;
+                left: 50%;
+                background-color: #0099d5;
+                width: 5px;
+                height: 26px;
+                bottom: 10px;
+                border-radius: 2px;
+                margin-left: -2px;
+            }
+            &:after {
+                box-sizing: border-box;
+                content: "";
+                position: absolute;
+                left: 50%;
+                background-color: #0099d5;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                margin-left: -3px;
+                top: 12px;
+            }
+        }
+        &.error {
+            border-color: #f27474;
+            &:before {
+                box-sizing: border-box;
+                content: "";
+                position: absolute;
+                left: 18px;
+                background-color: #f27474;
+                width: 4px;
+                height: 42px;
+                bottom: 10px;
+                border-radius: 2px;
+                margin-left: 10px;
+                transform: rotate(45deg);
+            }
+            &:after {
+                box-sizing: border-box;
+                content: "";
+                position: absolute;
+                left: 18px;
+                background-color: #f27474;
+                width: 4px;
+                height: 42px;
+                bottom: 10px;
+                border-radius: 2px;
+                margin-left: 10px;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+.footer {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.confirm-button {
+     ::ng-deep {
+        button {
+            width: 80px;
+            padding: 5px 10px;
+            margin: 0 12px;
+        }
+    }
+}
+
+.close-button {
+     ::ng-deep {
+        button {
+            width: 120px;
+            padding: 5px 10px;
+        }
+    }
+}

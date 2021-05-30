@@ -1,0 +1,48 @@
+.company-overview-content {
+    margin: 10px 16px;
+    width: 1032px;
+    height: 98px;
+    .company-overview-content-headline {
+        margin-bottom: 12px;
+        line-height: 1.25em;
+    }
+    .company-overview-content-company-name {
+        color: #4a4a4a;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .company-overview-content-company-address {
+        color: #565e65;
+        font-size: 12px;
+        margin-left: 12px;
+    }
+    .company-overview-content-company-detail {
+        margin-left: 12px;
+        height: 20px;
+        span {
+            color: #565e65;
+            font-size: 14px;
+            line-height: 20px;
+            &:not(:first-of-type):before {
+                content: "/";
+                margin: 0 12px;
+                color: #bbb;
+            }
+        }
+        img {
+            height: 16px;
+            margin-right: 8px;
+        }
+    }
+    .company-overview-content-score {
+        display: inline-flex;
+        margin-bottom: 8px;
+        span {
+            line-height: 36px;
+            color: #4a4a4a;
+            font-size: 18px;
+            font-weight: 420;
+            margin-left: 8px;
+        }
+    }
+}

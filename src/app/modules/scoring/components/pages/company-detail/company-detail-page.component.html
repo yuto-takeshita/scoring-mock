@@ -1,0 +1,15 @@
+<div class="company-detail-contents">
+    <div class="company-detail-contents-row">
+        <secondary-button class="back-button" (click)="onClickBack($event)">戻る</secondary-button>
+    </div>
+    <div class="company-detail-contents-row">
+        <app-company-overview></app-company-overview>
+    </div>
+    <div class="company-detail-contents-row">
+        <app-company-score [companyCode]="companyId"></app-company-score>
+    </div>
+
+    <div class="company-detail-contents-row">
+        <app-company-performance></app-company-performance>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+:host {
+    .company-detail-contents {
+        width: 1064px;
+        margin: 16px auto;
+    }
+    .company-detail-contents-row {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .back-button {
+        margin-bottom: 12px;
+         ::ng-deep {
+            button {
+                width: 80px;
+            }
+        }
+    }
+}

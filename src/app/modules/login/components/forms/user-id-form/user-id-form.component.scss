@@ -1,0 +1,17 @@
+:host {
+    display: block;
+    input {
+        width: 310px;
+    }
+    .icon {
+        padding: 0 8px;
+        &::ng-deep {
+            svg {
+                width: 18px;
+                height: 18px;
+                fill: #565e65;
+            }
+        }
+        pointer-events: none;
+    }
+}

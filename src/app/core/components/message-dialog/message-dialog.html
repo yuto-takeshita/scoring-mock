@@ -1,0 +1,26 @@
+<section class="theme-normal">
+    <div mat-dialog-content class="content">
+        <div *ngIf="data"></div>
+        <div *ngIf="isInfoDialog(data.type) || isConfirmDialog(data.type)" class="dialog-icon info"></div>
+        <div *ngIf="isErrorDialog(data.type)" class="dialog-icon error"></div>
+        <div class="dialog-title" *ngIf="data.title">
+            {{data.title}}
+        </div>
+        <div class="dialog-text" *ngFor="let message of data.messages">
+            {{message}}
+        </div>
+    </div>
+
+    <div class="footer" *ngIf="isConfirmDialog(data.type); else closeOnly">
+        <negative-button class="confirm-button" (onClick)="onClickCancel($event)">いいえ
+        </negative-button>
+        <primary-button class="confirm-button" (onClick)="onClickAccept($event)">はい
+        </primary-button>
+    </div>
+    <ng-template #closeOnly>
+        <div class="footer">
+            <primary-button class="close-button" (onClick)="onClickClose($event)">OK
+            </primary-button>
+        </div>
+    </ng-template>
+</section>

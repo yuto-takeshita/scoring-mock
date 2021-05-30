@@ -1,0 +1,56 @@
+<div class="company-score-content">
+    <div class="company-score-content-title">
+        総合指標
+    </div>
+    <div class="company-score-content-detail">
+        <div class="company-score-content-chart">
+            <highcharts-chart [Highcharts]="Highcharts" [callbackFunction]="chartCallback" [runOutsideAngular]="'true'" [options]="chartOptions" [(update)]="updateFlag">
+            </highcharts-chart>
+        </div>
+        <div class="company-score-content-score-breakdown">
+            <div class="company-score-content-score-breakdown-total-score">
+                <span class="column-name">総合評点</span>
+                <star-rating value="4" totalstars="5" checkedcolor="#ffd900" uncheckedcolor="gray" size="24px" readonly="true"></star-rating>
+                <span>83.4pt</span>
+                <secondary-button (click)="onClickDetail()">詳細</secondary-button>
+            </div>
+            <div class="company-score-content-score-breakdown-score-by-category">
+                <div class="category-row">
+                    <div class="category-column">
+                        <img src="assets/images/icons/money.png">
+                        <span>売上</span>
+                    </div>
+                    <span>19.0pt</span>
+                </div>
+                <div class="category-row">
+                    <div class="category-column">
+                        <img src="assets/images/icons/customer.png">
+                        <span>客数</span>
+                    </div>
+                    <span>18.2pt</span>
+                </div>
+                <div class="category-row">
+                    <div class="category-column">
+                        <img src="assets/images/icons/thumbs-up.png">
+                        <span>信頼性</span>
+                    </div>
+                    <span>13.6pt</span>
+                </div>
+                <div class="category-row">
+                    <div class="category-column">
+                        <img src="assets/images/icons/upward.png">
+                        <span>成長性</span>
+                    </div>
+                    <span>15.1pt</span>
+                </div>
+                <div class="category-row">
+                    <div class="category-column">
+                        <img src="assets/images/icons/paper.png">
+                        <span>収益率</span>
+                    </div>
+                    <span>17.5pt</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
